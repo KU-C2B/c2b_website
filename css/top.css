@@ -1,0 +1,49 @@
+embed#top_flash{
+  width:900px;
+  height:451px;
+  backgroundcolor:#d0ffd0;
+  margin:20px 0px 0px 0px;
+}
+
+section#shoukai{
+  float:left;
+  width:280px;
+  margin:10px 0px 0px 20px;
+  margin-bottom:30px;
+  line-height:0.2;
+}
+section#shoukai article{
+  background-image:url(../images/top_caram_02.gif)
+}
+section#shoukai p{
+  text-indent:0px;
+  padding:0px 32px 0px 32px;
+}
+section#shoukai iframe{
+  display:block;
+  padding:5px 23px;
+  overflow:hidden;
+}
+
+section#news,section#twitter{
+  float:right;
+  display:block;
+  width:540px;
+}
+section#twitter{
+  margin-bottom:30px;
+}
+
+h2{
+text-indent:0em;
+}
+
+section#twitter h1{
+  line-height:1.4em;
+}
+#twitter span,li,a{
+  font-size:12px;
+}
+#twitter ul{
+  list-style-type: none;
+}

@@ -1,0 +1,15 @@
+dl{
+  list-style:none;
+}
+dt{
+  font-size:16px;
+  line-height:1.4;
+  text-indent:1.5em;
+  font-weight:bold;
+}
+dd{
+  text-indent:1em;
+}
+li{
+	list-style:none;
+}
