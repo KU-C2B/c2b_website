@@ -3,7 +3,7 @@
   padding:0px;
   font-size:14px;
   line-height:1.6;
-  color:#030;
+  color:rgb(0, 1, 51);
 }
 em{
 	font-size:16px;
@@ -18,7 +18,7 @@ a:hover{
   text-decoration:underline;
 }
 p{
-  text-indent:1em;
+  text-indent:0em;
 }
 header{
   margin-top:15px;
@@ -30,7 +30,12 @@ a img {
 body{
   width:900px;
   margin:auto;
-  background:#ddffdd;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  background-color: #ffffff;
 }
 nav{
   margin:10px 0px 0px 0px;
@@ -75,17 +80,19 @@ nav li a{
   }
 h1{
   border-bottom:solid 2px;
-  border-color:#FF9999;
+  border-color:#7aa8ff;
   text-indent:2em;
-  margin:10px 0px 0px 0px;
+  margin:10px 0px 10px 0px;
 }
 h2{
   font-size:20px;
   line-height:1.6;
   border-bottom:solid 1px;
   border-bottom-color:#030;
-  border-color:#FF9999;
-  text-indent:4em;
+  border-color:#7aa8ff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-indent:0em;
   color:#000;
 }
 h2 a{
@@ -113,7 +120,7 @@ footer{
   display:block;
   width:720px;
   border-radius:12px 12px 12px 12px;
-  background:#80b080;
+  background:#8087b0;
   color:#ffffff;
   font-size:13px;
 }
