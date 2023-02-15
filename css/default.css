@@ -4,6 +4,7 @@
   font-size:14px;
   line-height:1.6;
   color:rgb(0, 1, 51);
+
 }
 em{
 	font-size:16px;
@@ -90,15 +91,26 @@ h2{
   border-bottom:solid 1px;
   border-bottom-color:#030;
   border-color:#7aa8ff;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   text-indent:0em;
-  color:#000;
+  background: #0f46ad;
+	padding: 0.5rem;
+	position: relative;
+	color: #fff;
 }
 h2 a{
   font-size:20px;
 }
-
+h2:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-right: solid 20px rgb(6, 0, 56);
+}
 h3{
   font-size:16px;
   line-height:1.4;
