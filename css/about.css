@@ -40,3 +40,6 @@
 .inline{
     display: inline;
   }
+  section#aboutus{
+    margin-left: 0;
+  }

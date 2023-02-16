@@ -178,6 +178,8 @@ footer{
   background:#8087b0;
   color:#ffffff;
   font-size:13px;
+  margin-top:90px;
+  margin-bottom: 90px;
 }
 @media screen and (max-width:560px) {
  
@@ -211,6 +213,7 @@ footer{
     nav a{
     text-decoration: none;
     color: #333;
+    font-size:0.8em;
     }
     nav a.current{
     color: #00B0F0;
@@ -239,6 +242,10 @@ footer{
   }
   h1 img{
     height: 10vw
+  }
+  .essay{
+    margin-left: 0;
+    margin-right: 0;
   }
 
 
