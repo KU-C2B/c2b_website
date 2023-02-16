@@ -56,7 +56,7 @@ nav li a{
   height:40px;
   padding:0px;
   float:left;
-  background-image: url(../images/nav.png);
+  background-image: url(../images/nav_2023.png);
   background-repeat: no-repeat; 
   line-height:40px;
 }
@@ -103,6 +103,7 @@ h2 a{
   font-size:20px;
 }
 h2:before {
+  
   position: absolute;
   content: '';
   top: 100%;
@@ -110,6 +111,8 @@ h2:before {
   border: none;
   border-bottom: solid 10px transparent;
   border-right: solid 20px rgb(6, 0, 56);
+  
+
 }
 h3{
   font-size:16px;
@@ -123,6 +126,49 @@ dt{
 }
 dd{
 	text-indent:2em;
+}
+
+.floating-banner {
+  position: fixed;
+  z-index: 99999;
+  bottom: 30px;
+  left: 0;
+}
+.banner {
+  width: 250px;/* バナーの横幅 */
+  padding: 20px 10px;
+  background: #ff66a0;/* バナーの背景色 */
+  font-weight: bold;
+  text-align: center;
+}
+.floating-banner a {
+  text-decoration: none;/* リンクに下線が入らないように */
+}
+.copy {
+  font-size: 25px;
+  margin: 0 auto 0;
+  line-height: 1.6;
+}
+@media screen and (max-width: 990px) {
+  .floating-banner {
+      display: none;
+  }
+}
+@media screen and (max-width: 560px) {
+  .floating-banner {
+      display: inline-block;
+  }
+  .banner {
+      width: 100vw;
+      padding: 8px;
+  }
+  .sp {
+      display: none;
+  }
+  .copy {
+      font-size: 18px;
+      margin: 0 auto 6px;
+  }
 }
 footer{
   clear:both;
