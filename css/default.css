@@ -91,12 +91,8 @@ h3{
   text-indent:1.5em;
   color:#000;
 }
-dt{
-  font-size:16px;
-}
-dd{
-	text-indent:2em;
-}
+
+
 
 .floating-banner {
   position: fixed;
@@ -231,6 +227,7 @@ footer{
   }
   .banner {
     width: 100vw;
+    height: 12vh;
     padding: 8px;
   }
   .sp {
