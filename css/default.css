@@ -237,8 +237,9 @@ footer{
     display: none;
   }
   .copy {
-    font-size: 18px;
-    margin: 0 auto 6px;
+    height: 100%;
+    font-size: 22px;
+    padding: 15px 0;
   }
   h1 img{
     height: 10vw
