@@ -49,10 +49,17 @@ body{
   margin-right:20px;
   }
 h1{
+  font-size: 40px;
+  font-family: fantasy,serif;
+  color: #000;
   border-bottom:solid 2px;
   border-color:#7aa8ff;
-  text-indent:2em;
   margin:10px 0px 10px 0px;
+  padding: 0 0 0 60px;
+  background-image: url(../images/h1icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  background-size: 50px;
 }
 h2{
   font-size:20px;
@@ -240,6 +247,15 @@ footer{
   }
   h1 img{
     height: 10vw
+  }
+  h1{
+    font-size:7.5vw;
+    margin:1.5vw 0 1.5vw 0;
+    padding: 0 0 0 12vw;
+    background-image: url(../images/h1icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 1.5vw;
+    background-size: 10vw;
   }
   .essay{
     margin-left: 0;
