@@ -3,7 +3,8 @@
   padding:0px;
   font-size:14px;
   line-height:1.6;
-  color:#030;
+  color:rgb(0, 1, 51);
+
 }
 em{
 	font-size:16px;
@@ -18,7 +19,8 @@ a:hover{
   text-decoration:underline;
 }
 p{
-  text-indent:1em;
+  text-indent:0em;
+  font-family: sans-serif;
 }
 header{
   margin-top:15px;
@@ -30,68 +32,65 @@ a img {
 body{
   width:900px;
   margin:auto;
-  background:#ddffdd;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  background-color: #ffffff;
 }
-nav{
-  margin:10px 0px 0px 0px;
-  height:40px;
-}
-nav ul{
-  width:900px;
-  display:block;
-  list-style-type:none;
-}
-
-nav li a{
-  text-indent: -9999px;
-  display:block;
-  overflow:hidden;
-  width:150px;
-  height:40px;
-  padding:0px;
-  float:left;
-  background-image: url(../images/nav.png);
-  background-repeat: no-repeat; 
-  line-height:40px;
+.resizeimage img { 
+  max-width: 100vw; 
 }
 
-#nav0 a { width:150px; background-position:0px     -40px;}
-#nav1 a { width:150px; background-position:-150px  -40px;}
-#nav2 a { width:150px; background-position:-300px  -40px;}
-#nav3 a { width:150px; background-position:-450px  -40px;}
-#nav4 a { width:150px; background-position:-600px  -40px;}
-#nav5 a { width:150px; background-position:-750px  -40px;}
-
-#nav0 a:hover  { width:150px; background-position:0px     0px;}
-#nav1 a:hover  { width:150px; background-position:-150px  0px;}
-#nav2 a:hover  { width:150px; background-position:-300px  0px;}
-#nav3 a:hover  { width:150px; background-position:-450px  0px;}
-#nav4 a:hover  { width:150px; background-position:-600px  0px;}
-#nav5 a:hover  { width:150px; background-position:-750px  0px;}
 
 .essay{
   margin-left:20px;
   margin-right:20px;
   }
 h1{
+  font-size: 40px;
+  font-family: fantasy,serif;
+  color: #000;
   border-bottom:solid 2px;
-  border-color:#FF9999;
-  text-indent:2em;
-  margin:10px 0px 0px 0px;
+  border-color:#7aa8ff;
+  margin:10px 0px 10px 0px;
+  padding: 0 0 0 60px;
+  background-image: url(../images/h1icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  background-size: 50px;
 }
 h2{
   font-size:20px;
+  font-family: sans-serif;
   line-height:1.6;
   border-bottom:solid 1px;
   border-bottom-color:#030;
-  border-color:#FF9999;
-  text-indent:4em;
-  color:#000;
+  border-color:#7aa8ff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-indent:0em;
+  background: #0f46ad;
+	padding: 0.5rem;
+	position: relative;
+	color: #fff;
 }
 h2 a{
   font-size:20px;
 }
+h2:before {
+  
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-right: solid 20px rgb(6, 0, 56);
+  
 
+}
 h3{
   font-size:16px;
   line-height:1.4;
@@ -99,21 +98,170 @@ h3{
   text-indent:1.5em;
   color:#000;
 }
-dt{
-  font-size:16px;
+
+
+
+.floating-banner {
+  position: fixed;
+  z-index: 99999;
+  bottom: 30px;
+  left: 0;
 }
-dd{
-	text-indent:2em;
+.banner {
+  width: 250px;/* バナーの横幅 */
+  padding: 20px 10px;
+  background: radial-gradient(#f87cac, #fa5a98);
+  font-weight: bold;
+  text-align: center;
+}
+.floating-banner a {
+  text-decoration: none;/* リンクに下線が入らないように */
+}
+.copy {
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 0 auto 0;
+  line-height: 1.6;
+}
+@media screen and (max-width: 560px){
+  .floating-banner {
+    display: none;
+}
+}
+@media screen and (min-width: 561px) {
+  nav{
+    margin:10px 0px 0px 0px;
+    height:40px;
+  }
+  nav ul{
+    width:900px;
+    display:block;
+    list-style-type:none;
+  }
+  
+  nav li a{
+    text-indent: -9999px;
+    display:block;
+    overflow:hidden;
+    width:150px;
+    height:40px;
+    padding:0px;
+    float:left;
+    background-image: url(../images/nav_2023.png);
+    background-repeat: no-repeat; 
+    line-height:40px;
+  }
+  
+  #nav0 a { width:150px; background-position:0px     -40px;}
+  #nav1 a { width:150px; background-position:-150px  -40px;}
+  #nav2 a { width:150px; background-position:-300px  -40px;}
+  #nav3 a { width:150px; background-position:-450px  -40px;}
+  #nav4 a { width:150px; background-position:-600px  -40px;}
+  #nav5 a { width:150px; background-position:-750px  -40px;}
+  
+  #nav0 a:hover  { width:150px; background-position:0px     0px;}
+  #nav1 a:hover  { width:150px; background-position:-150px  0px;}
+  #nav2 a:hover  { width:150px; background-position:-300px  0px;}
+  #nav3 a:hover  { width:150px; background-position:-450px  0px;}
+  #nav4 a:hover  { width:150px; background-position:-600px  0px;}
+  #nav5 a:hover  { width:150px; background-position:-750px  0px;}
+  
+  h1 img{
+    height: 50px;
+  }
+
 }
 footer{
   clear:both;
-  margin:20px 80px;
   padding:2px;
-  text-align:center;
+  text-align: center;
   display:block;
-  width:720px;
+  width:100%;
   border-radius:12px 12px 12px 12px;
-  background:#80b080;
+  background:#8087b0;
   color:#ffffff;
   font-size:13px;
+  margin-top:90px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width:560px) {
+ 
+	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  body{
+    width:95vw;
+    margin:auto;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    background-color: #ffffff;
+  }
+  nav{
+    text-align: center;
+    }
+    nav ul{
+    margin: 0 ;
+    padding: 0 ;
+    }
+    nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 15%;
+    }
+    nav li:not(:last-child){
+    border-right:2px solid #a4c4ff;
+    }
+    nav a{
+    text-decoration: none;
+    color: #333;
+    font-size:0.8em;
+    }
+    nav a.current{
+    color: #00B0F0;
+    border-bottom:2px solid #00B0F0;
+    }
+    nav a:hover{
+    color:#F7CB4D;
+    border-bottom:2px solid #F7CB4D;
+    }
+    
+  .floating-banner {
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+  }
+  .banner {
+    width: 100vw;
+    height: 12vh;
+    padding: 8px;
+  }
+  .sp {
+    display: none;
+  }
+  .copy {
+    height: 100%;
+    font-size: 22px;
+    padding: 15px 0;
+  }
+  h1 img{
+    height: 10vw
+  }
+  h1{
+    font-size:7.5vw;
+    margin:1.5vw 0 1.5vw 0;
+    padding: 0 0 0 12vw;
+    background-image: url(../images/h1icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 1.5vw;
+    background-size: 10vw;
+  }
+  .essay{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+ 
 }

@@ -1,6 +1,57 @@
-dt{
-	line-height:1.5;
-	text-indent: 2em;
-	font-size: 120%;
-	margin-top:20px;
-}
+
+.Qa-Box {
+	margin: 0 auto;
+  }
+  .Qa-Box .Qa {
+	padding: 20px 0;
+	border-bottom: 1px solid #a9d1ff;
+  }
+  .Qa-Box .Qa dt,
+  .Qa-Box .Qa dd {
+	display: flex;
+	align-items: baseline;
+	margin: 15px 0;
+  }
+  
+  .Qa-Box .Qa dt p {
+	margin: 0;
+	padding-left: 15px;
+	font-weight: bold;
+	width: 100%;
+  }
+  
+  .Qa-Box .Qa dd p {
+	margin: 0;
+	padding-left: 15px;
+	width: 100%;
+  }
+  
+  .Qa-Box .Qa:last-of-type {
+	border-bottom: none;
+  }
+  
+  .Qa-Box .Qa dt::before {
+	content: "Q";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: #4c75fc;
+	width: 2em;
+	height: 2em;
+  }
+  
+  .Qa-Box .Qa dd::before {
+	content: "A";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: #ff3d3d;
+	width: 2em;
+	height: 2em;
+  }
+  
+  @media screen and (max-width: 960px) {
+
+  }
