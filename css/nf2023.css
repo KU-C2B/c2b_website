@@ -1,0 +1,141 @@
+h2 {
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    border-bottom-color: rgb(0, 0, 0);
+    border-color: #c06363;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-indent: 0em;
+    background: #552626;
+    padding: 0.5rem;
+    position: relative;
+    color: #fff;
+}
+
+h2:before {
+    border: none;
+}
+
+
+@media screen and (min-width:561px) {
+    h1 {
+        margin-top: 40px;
+        font-size: 80px;
+        font-family: 'DotGothic16', sans-serif;
+        color: #380b0b;
+        border: none;
+        background-image: none;
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+
+    .rev {
+        background-color: #380b0b;
+        font-size: 80px;
+        font-family: 'DotGothic16', sans-serif;
+        color: #ffffff;
+        border: none;
+    }
+
+    .date {
+        margin-top: 18px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 3vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .sinagaki {
+        width: 100%;
+        height: 250px;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .sinagaki h3 {
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .sinagaki p {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+
+    }
+
+    .sinagaki img {
+        max-width: 33%;
+        max-height: 250px;
+    }
+
+    .description {
+        margin-left: 2em;
+        width: 60%;
+        float: left;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    h1 {
+        margin-top: 40px;
+        font-size: 10vw;
+        font-family: 'DotGothic16', sans-serif;
+        color: #380b0b;
+        border: none;
+        background-image: none;
+        text-align: center;
+        padding: 0 0 0 0;
+
+    }
+
+    .rev {
+        background-color: #380b0b;
+        font-size: 10vw;
+        font-family: 'DotGothic16', sans-serif;
+        color: #ffffff;
+        border: none;
+    }
+
+    .date {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .sinagaki {
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .sinagaki h3 {
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .sinagaki p {
+        margin-top: 0.5em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .sinagaki img {
+        width:90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
