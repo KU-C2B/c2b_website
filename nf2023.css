@@ -17,13 +17,6 @@ h2 {
     height: auto;
     aspect-ratio: 360 / 96;
 }
-.social img{
-    height: 100%;
-    width: auto;
-    aspect-ratio: 1 / 1;
-    margin-left: 15px;
-
-}
 
 
 body {
@@ -74,7 +67,7 @@ h2:before {
     {
         margin-top: 40px;
         height: 50px;
-        float: right;
+    float: right;
     }
     .container {
         width: 60vw;
