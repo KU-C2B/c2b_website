@@ -68,6 +68,7 @@ h2:before {
 @media screen and (min-width:671px) {
     header {
         width: 900px;
+        max-width: 100vw;
         margin: auto;
     }
     .social
@@ -77,8 +78,13 @@ h2:before {
         float: right;
     }
     .container {
-        width: 60vw;
+        width: 900px;
+        max-width: 100%;
         margin: auto;
+    }
+    nav
+    {
+        max-width: 100vw;
     }
 
     h1 {
