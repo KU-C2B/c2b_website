@@ -1,0 +1,264 @@
+h2 {
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    border-bottom-color: rgb(0, 0, 0);
+    border-color: #c06363;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-indent: 0em;
+    background: #552626;
+    padding: 0.5rem;
+    position: relative;
+    color: #fff;
+}
+.logo_nf img
+{
+    width: 40%;
+    height: auto;
+    aspect-ratio: 360 / 96;
+}
+.social img{
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    margin-left: 15px;
+
+}
+
+
+body {
+    width: 100%;
+    background: none;
+}
+
+h2:before {
+    border: none;
+}
+
+.link {
+    margin-left: 2em;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 900;
+}
+
+.link li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.link a {
+    font-size: 1em;
+}
+
+.link a:after {
+    margin-left: 0.2em;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/link.png);
+    width: 1em;
+    /*画像の幅*/
+    height: 1em;
+    /*画像の高さ*/
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
+@media screen and (min-width:671px) {
+    header {
+        width: 900px;
+        max-width: 100vw;
+        margin: auto;
+    }
+    .social
+    {
+        margin-top: 40px;
+        height: 50px;
+        float: right;
+    }
+    .container {
+        width: 900px;
+        max-width: 100%;
+        margin: auto;
+    }
+    nav
+    {
+        max-width: 100vw;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 7vw;
+        font-family: 'DotGothic16', sans-serif;
+        color: #380b0b;
+        border: none;
+        background-image: none;
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+
+    .rev {
+        background-color: #380b0b;
+        font-size: 7vw;
+        font-family: 'DotGothic16', sans-serif;
+        color: #ffffff;
+        border: none;
+    }
+
+    .date {
+        margin-top: 18px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 3vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .sinagaki {
+        width: 100%;
+        height: 250px;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .sinagaki h3 {
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .sinagaki p {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+
+    }
+
+    .sinagaki img {
+        max-width: 33%;
+        max-height: 250px;
+    }
+
+    .description {
+        margin-left: 2em;
+        width: 60%;
+        float: left;
+    }
+    .map
+    {
+        width:600px;
+        display: flex;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width:670px) {
+    .social
+    {
+    float: right;
+    height: 8vw;
+    margin-right: 4vw;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 9vw;
+        font-family: 'DotGothic16', sans-serif;
+        color: #380b0b;
+        border: none;
+        background-image: none;
+        text-align: center;
+        padding: 0 0 0 0;
+
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .rev {
+        background-color: #380b0b;
+        font-size: 9vw;
+        font-family: 'DotGothic16', sans-serif;
+        color: #ffffff;
+        border: none;
+    }
+
+    .date {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .sinagaki {
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .sinagaki h3 {
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .sinagaki p {
+        margin-top: 0.5em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .sinagaki img {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .description {
+        width: 100%;
+    }
+    .map
+    {
+        width: 100%;
+    }
+}
+@media screen and(max-width:900px)
+{
+    nav{
+        text-align: center;
+        }
+        nav ul{
+        margin: 0 ;
+        padding: 0 ;
+        }
+        nav li{
+        list-style: none;
+        display: inline-block;
+        width: 10%;
+        min-width: 15%;
+        }
+        nav li:not(:last-child){
+        border-right:2px solid #a4c4ff;
+        }
+        nav a{
+        text-decoration: none;
+        color: #333;
+        font-size:0.8em;
+        }
+        nav a.current{
+        color: #00B0F0;
+        border-bottom:2px solid #00B0F0;
+        }
+        nav a:hover{
+        color:#F7CB4D;
+        border-bottom:2px solid #F7CB4D;
+        }
+}

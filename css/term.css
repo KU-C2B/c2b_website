@@ -4,12 +4,18 @@ dl{
 dt{
   font-size:16px;
   line-height:1.4;
-  text-indent:1.5em;
+  text-indent: 1em;
   font-weight:bold;
+  margin-top: 1.5em;
 }
 dd{
   text-indent:1em;
+  margin-left: 2em;
+  /* margin-bottom: 2em; */
 }
 li{
 	list-style:none;
+}
+ul{
+	margin-left:4em;
 }
