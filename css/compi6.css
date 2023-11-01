@@ -1,0 +1,105 @@
+body {
+    width: unset;
+}
+hgroup {
+    color: #57724f;
+    text-align: center;
+}
+.compi6_container {
+    max-width: 100%;
+    background-image: url(../images/compi6_bg.png);
+    background-size: cover;
+    box-shadow: inset 0 100px 30px -30px white;
+    margin-bottom: -70px;
+}
+h1 {
+    font-size: 4em;
+    font-family: 'Bad Script', cursive;
+    color: #57724f;
+    background-image: none;
+    border-bottom: none;
+    margin: 0 0 0 0;
+    padding: 50px 0 0 0;
+}
+.compi6_subtitle {
+    font-size: 2em;
+    font-family: 'Kiwi Maru', serif;
+    color: #57724f;
+}
+.compi6_random {
+    height: 300px;
+}
+a {
+    font-size: 1em;
+    font-family: 'Shippori Mincho', serif;
+    color: #42533d;
+    border-style:none;
+    text-decoration:none;
+}
+h2 {
+    font-size: 3em;
+    font-family: 'Kiwi Maru', serif;
+    color: #42533d;
+    background: none;
+    border-bottom: none;
+    margin: 0 0 0 0;
+    padding: 50px 0 0 0;
+}
+h2:before {
+    border: none;
+}
+.composer {
+    font-size: 2em;
+    font-family: 'Kiwi Maru', serif;
+    color: #42533d;
+    background: none;
+    border-bottom: none;
+}
+small {
+    padding-left: 0.5em;
+    color: #42533d;
+}
+h3 {
+    font-size: 1.5em;
+    font-family: 'Kiwi Maru', serif;
+    color: rgb(131, 141, 128);
+}
+.lyrics {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1em;
+    font-family: 'Shippori Mincho', serif;
+    text-align: center;
+    white-space: pre-line;
+}
+.credit {
+    padding-top: 50px;
+    font-size: 1em;
+    font-family: 'Shippori Mincho', serif;
+    text-align: center;
+    white-space: pre-line;
+}
+
+@media screen and (min-width:671px) {
+    header {
+        width: 900px;
+        max-width: 100vw;
+        margin: auto;
+    }
+    .social
+    {
+        margin-top: 40px;
+        height: 50px;
+        float: right;
+    }
+}
+@media screen and (max-width:670px) {
+    .social
+    {
+        float: right;
+        height: 8vw;
+        margin-right: 4vw;
+    }
+}
