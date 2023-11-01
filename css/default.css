@@ -94,7 +94,7 @@ h2 a{
   font-size:20px;
 }
 h2:before {
-  
+
   position: absolute;
   content: '';
   top: 100%;
@@ -102,7 +102,7 @@ h2:before {
   border: none;
   border-bottom: solid 10px transparent;
   border-right: solid 20px rgb(6, 0, 56);
-  
+
 
 }
 h3{
