@@ -45,12 +45,12 @@
 		<li><a href="#whats_c2b">C.2.B #とは</a></li>
 		<li><a href="#style_c2b">C.2.Bの仕組み</a></li>
 		<li><a href="#bosyu_c2b">C.2.Bに興味がある人には</a></li>
-		<li><a href="#daihyo">2022年度C.2.B代表陣</a></li>
+		<li><a href="#daihyo">本年度C.2.B代表陣</a></li>
 	</ul>
 	</article>
 	<article>
 		<h2 id="whats_c2b">C.2.B projectとは</h2>
-			<p>本サークルは<a href="http://www.kyoto-u.ac.jp/ja" alt="京都大学">京都大学</a>を本拠地に置く(ニコニコ系)総合創作サークルです。2008年4月発足。2022年度で14周年を迎えます。</p>
+			<p>本サークルは<a href="http://www.kyoto-u.ac.jp/ja" alt="京都大学">京都大学</a>を本拠地に置く(ニコニコ系)総合創作サークルです。2008年4月発足。<span id="nendo"></span>年度で<span id="anniv"></span>周年を迎えます。</p>
 			<p>京都大学で<em>「ニコ動サークル」</em>、<em>「C2B」</em>、<em>「しつび」</em>等と呼ばれる場合は本サークルのことを指すと思われます。</p>
 			<p>インカレサークルであり、京大生の他に同志社、京工繊、同女、京府大、立命館などの大学生も所属しています。</p>
 			<p>「ニコニコ系総合創作サークル」と言っても、動画を作るだけのサークルという訳ではありません。</p>
@@ -186,3 +186,17 @@
 <footer>Copyright(C)2008-2021 C.2.B project All Rights Reserved.</footer>
 </body>
 </html>
+
+<script>
+let nendoElm = document.getElementById("nendo");
+let annivElm = document.getElementById("anniv");
+let today = new Date();
+let nendo= today.getFullYear();
+if(today.getMonth <= 3)
+{
+	nendo--;
+}
+nendoElm.textContent=nendo;
+annivElm.textContent=nendo-2008;
+
+</script>
