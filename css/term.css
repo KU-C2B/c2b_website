@@ -1,21 +1,25 @@
-dl{
-  list-style:none;
+dl {
+  list-style: none;
 }
-dt{
-  font-size:16px;
-  line-height:1.4;
+
+dt {
+  font-size: 16px;
+  line-height: 1.4;
   text-indent: 1em;
-  font-weight:bold;
+  font-weight: bold;
   margin-top: 1.5em;
 }
-dd{
-  text-indent:1em;
+
+dd {
+  text-indent: 1em;
   margin-left: 2em;
   /* margin-bottom: 2em; */
 }
-li{
-	list-style:none;
+
+li {
+  list-style: none;
 }
-ul{
-	margin-left:4em;
+
+ul {
+  margin-left: 4em;
 }

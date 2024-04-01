@@ -1,59 +1,68 @@
-
 @media screen and (min-width:561px) {
-  section#shoukai{
-    float:left;
-    width:280px;
-    margin:10px 0px 0px 20px;
-    margin-bottom:30px;
-    line-height:0.2;
+  section#shoukai {
+    float: left;
+    width: 280px;
+    margin: 10px 0px 0px 20px;
+    margin-bottom: 30px;
+    line-height: 0.2;
   }
 
-  section#shoukai p{
-    text-indent:0px;
-    padding:0px 32px 0px 32px;
+  section#shoukai p {
+    text-indent: 0px;
+    padding: 0px 32px 0px 32px;
   }
-  section#shoukai iframe{
-    display:block;
-    padding:5px 23px;
-    overflow:hidden;
+
+  section#shoukai iframe {
+    display: block;
+    padding: 5px 23px;
+    overflow: hidden;
   }
-  
-  section#news,section#twitter{
-    float:right;
-    display:block;
-    width:540px;
+
+  section#news,
+  section#twitter {
+    float: right;
+    display: block;
+    width: 540px;
   }
-  section#twitter{
-    margin-bottom:30px;
+
+  section#twitter {
+    margin-bottom: 30px;
   }
-  
-  h2{
-  text-indent:0em;
+
+  h2 {
+    text-indent: 0em;
   }
-  
-  section#twitter h1{
-    line-height:1.4em;
+
+  section#twitter h1 {
+    line-height: 1.4em;
   }
-  #twitter span,li,a{
-    font-size:12px;
+
+  #twitter span,
+  li,
+  a {
+    font-size: 12px;
   }
-  #twitter ul{
+
+  #twitter ul {
     list-style-type: none;
   }
 
   #popup {
-    display: none; /* label でコントロールするので input は非表示に */
+    display: none;
+    /* label でコントロールするので input は非表示に */
   }
-  
+
   .popup-open {
-    cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+    cursor: pointer;
+    /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
   }
-  
+
   .popup-overlay {
-    display: none; /* input にチェックが入るまでは非表示に */
+    display: none;
+    /* input にチェックが入るまでは非表示に */
   }
-  
-  #popup:checked ~ .popup-overlay {
+
+  #popup:checked~.popup-overlay {
     display: block;
     z-index: 99999;
     background-color: #000000ce;
@@ -63,7 +72,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .popup-window {
     max-height: 80vw;
     max-width: 80vh;
@@ -75,15 +84,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .popup-text {
     margin: 0;
   }
-  
+
   .popup-text:not(:last-of-type) {
     margin-bottom: 1em
   }
-  
+
   .popup-close {
     cursor: pointer;
     position: absolute;
@@ -91,56 +100,67 @@
     right: 0;
   }
 }
+
 @media screen and (max-width:560px) {
-  section#shoukai{
-    width:75%;
-    line-height:0.2;
+  section#shoukai {
+    width: 75%;
+    line-height: 0.2;
   }
 
-  section#shoukai p{
-    text-indent:0px;
-    padding:0px 32px 0px 32px;
+  section#shoukai p {
+    text-indent: 0px;
+    padding: 0px 32px 0px 32px;
   }
-  section#shoukai iframe{
-    display:block;
-    padding:5px 23px;
-    overflow:hidden;
+
+  section#shoukai iframe {
+    display: block;
+    padding: 5px 23px;
+    overflow: hidden;
   }
-  
-  section#news,section#twitter{
-    display:block;
+
+  section#news,
+  section#twitter {
+    display: block;
     margin-left: 0;
-    width:100%;
+    width: 100%;
   }
-  section#twitter{
+
+  /* section#twitter {} */
+
+  h2 {
+    text-indent: 0em;
   }
-  
-  h2{
-  text-indent:0em;
+
+  section#twitter h1 {
+    line-height: 1.4em;
   }
-  
-  section#twitter h1{
-    line-height:1.4em;
+
+  #twitter span,
+  li,
+  a {
+    font-size: 12px;
   }
-  #twitter span,li,a{
-    font-size:12px;
-  }
-  #twitter ul{
+
+  #twitter ul {
     list-style-type: none;
   }
+
   #popup {
-    display: none; /* label でコントロールするので input は非表示に */
+    display: none;
+    /* label でコントロールするので input は非表示に */
   }
-  
+
   .popup-open {
-    cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+    cursor: pointer;
+    /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
   }
-  
+
   .popup-overlay {
-    display: none; /* input にチェックが入るまでは非表示に */
+    display: none;
+    /* input にチェックが入るまでは非表示に */
   }
-  
-  #popup:checked ~ .popup-overlay {
+
+  #popup:checked~.popup-overlay {
     display: block;
     z-index: 99999;
     background-color: #000000ce;
@@ -150,7 +170,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .popup-window {
     width: 95%;
     background-color: #ffffff00;
@@ -160,15 +180,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .popup-text {
     margin: 0;
   }
-  
+
   .popup-text:not(:last-of-type) {
     margin-bottom: 1em
   }
-  
+
   .popup-close {
     cursor: pointer;
     position: absolute;
