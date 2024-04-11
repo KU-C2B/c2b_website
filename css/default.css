@@ -29,6 +29,7 @@ a:hover {
 p {
   text-indent: 0em;
   font-family: sans-serif;
+  padding: 0.2em 0;
 }
 
 header {
