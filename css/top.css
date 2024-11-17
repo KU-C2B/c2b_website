@@ -1,4 +1,4 @@
-@media screen and (min-width:561px) {
+@media screen and (min-width: 561px) {
   section#shoukai {
     float: left;
     width: 280px;
@@ -62,7 +62,7 @@
     /* input にチェックが入るまでは非表示に */
   }
 
-  #popup:checked~.popup-overlay {
+  #popup:checked ~ .popup-overlay {
     display: block;
     z-index: 99999;
     background-color: #000000ce;
@@ -90,7 +90,7 @@
   }
 
   .popup-text:not(:last-of-type) {
-    margin-bottom: 1em
+    margin-bottom: 1em;
   }
 
   .popup-close {
@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width: 560px) {
   section#shoukai {
     width: 75%;
     line-height: 0.2;
@@ -160,7 +160,7 @@
     /* input にチェックが入るまでは非表示に */
   }
 
-  #popup:checked~.popup-overlay {
+  #popup:checked ~ .popup-overlay {
     display: block;
     z-index: 99999;
     background-color: #000000ce;
@@ -186,7 +186,7 @@
   }
 
   .popup-text:not(:last-of-type) {
-    margin-bottom: 1em
+    margin-bottom: 1em;
   }
 
   .popup-close {

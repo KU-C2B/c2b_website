@@ -1,59 +1,56 @@
 .member {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .role {
-    text-indent: 0em;
-    font-family: "sans-serif";
-    font-size: 15px;
-    font-weight: bold;
-
+  text-indent: 0em;
+  font-family: "sans-serif";
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .name {
-    text-indent: 0.5em;
-    font-size: 22px;
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    margin-bottom: 6px;
-    text-shadow: 1px 1px 2px silver;
-
+  text-indent: 0.5em;
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 2px silver;
 }
 
 .description {
-    margin-top: 10px;
-    margin-left: 32px;
-    text-indent: 0em;
+  margin-top: 10px;
+  margin-left: 32px;
+  text-indent: 0em;
 }
 
 .kakomu {
-    padding: 2px 8px;
-    /* 枠と文字の空間 */
-    margin-bottom: 0 5px;
-    /* 枠の外の空間 */
-    background-color: #ffd28e;
-    /* 枠の背景色 */
-    border: 1px solid #777;
-    /* 枠の線の太さ・種類・色 */
-    border-radius: 8px;
-    /* 枠の角を丸くする */
-    box-shadow: 1px 2px 2px #ddd;
-    /*影をいれる*/
-    font-family: inherit;
-    /* フォントの種類を継承する */
-    font-size: 0.85em;
-    /* フォントの大きさ */
-    font-weight: bold;
-    font-family: "sans-serif";
-    vertical-align: middle;
-    margin-left: 10px;
-
+  padding: 2px 8px;
+  /* 枠と文字の空間 */
+  margin-bottom: 0 5px;
+  /* 枠の外の空間 */
+  background-color: #ffd28e;
+  /* 枠の背景色 */
+  border: 1px solid #777;
+  /* 枠の線の太さ・種類・色 */
+  border-radius: 8px;
+  /* 枠の角を丸くする */
+  box-shadow: 1px 2px 2px #ddd;
+  /*影をいれる*/
+  font-family: inherit;
+  /* フォントの種類を継承する */
+  font-size: 0.85em;
+  /* フォントの大きさ */
+  font-weight: bold;
+  font-family: "sans-serif";
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 .inline {
-    display: inline;
+  display: inline;
 }
 
 section#aboutus {
-    margin-left: 0;
+  margin-left: 0;
 }

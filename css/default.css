@@ -4,7 +4,6 @@
   font-size: 14px;
   line-height: 1.6;
   color: rgb(0, 1, 51);
-
 }
 
 ul {
@@ -64,12 +63,11 @@ body {
   aspect-ratio: 900 / 239;
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width: 560px) {
   .logo img {
     margin-bottom: 15px;
   }
 }
-
 
 .essay {
   margin-left: 20px;
@@ -111,16 +109,13 @@ h2 a {
 }
 
 h2:before {
-
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   left: 0;
   border: none;
   border-bottom: solid 10px transparent;
   border-right: solid 20px rgb(6, 0, 56);
-
-
 }
 
 h3 {
@@ -132,8 +127,6 @@ h3 {
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
-
-
 
 .floating-banner {
   position: fixed;
@@ -257,7 +250,6 @@ h3 {
   h1 img {
     height: 50px;
   }
-
 }
 
 footer {
@@ -274,8 +266,7 @@ footer {
   margin-bottom: 90px;
 }
 
-@media screen and (max-width:560px) {
-
+@media screen and (max-width: 560px) {
   /*　画面サイズが480px以下の場合ここの記述が適用される　*/
   body {
     width: 95vw;
@@ -315,13 +306,13 @@ footer {
   }
 
   nav a.current {
-    color: #00B0F0;
-    border-bottom: 2px solid #00B0F0;
+    color: #00b0f0;
+    border-bottom: 2px solid #00b0f0;
   }
 
   nav a:hover {
-    color: #F7CB4D;
-    border-bottom: 2px solid #F7CB4D;
+    color: #f7cb4d;
+    border-bottom: 2px solid #f7cb4d;
   }
 
   .floating-banner {
@@ -347,7 +338,7 @@ footer {
   }
 
   h1 img {
-    height: 10vw
+    height: 10vw;
   }
 
   h1 {
@@ -364,7 +355,4 @@ footer {
     margin-left: 0;
     margin-right: 0;
   }
-
-
-
 }
