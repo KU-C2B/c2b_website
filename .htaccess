@@ -11,5 +11,5 @@ RewriteCond %{REQUEST_URI} ^/nf\.html$
 RewriteRule ^nf\.html$ /nf [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/nf/?$
-RewriteRule ^nf/?$ /nf/2023 [R=301,L]
+RewriteRule ^nf/?$ /nf/2024 [R=301,L]
 # END SYSTEM HTTPS SETTING
