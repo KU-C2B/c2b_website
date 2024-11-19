@@ -217,6 +217,11 @@ h2::after {
   vertical-align: bottom;
 }
 
+.links ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* レスポンシブデザイン */
 @media screen and (min-width: 768px) {
   .plan-container {
@@ -260,7 +265,10 @@ h2::after {
 nav {
   background: white;
   padding: 0;
-  margin: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-navigation {
+  margin: 1rem;
 }
