@@ -56,12 +56,6 @@ main {
   aspect-ratio: 900 / 239;
 }
 
-@media screen and (max-width: 560px) {
-  .logo img {
-    margin-bottom: 15px;
-  }
-}
-
 .essay {
   margin-left: 20px;
   margin-right: 20px;
@@ -176,6 +170,10 @@ footer {
     background-position: 100% 100%;
     background-attachment: fixed;
     background-color: #ffffff;
+  }
+
+  .logo img {
+    margin-bottom: 15px;
   }
 
   .floating-banner {
