@@ -70,6 +70,37 @@ header {
   color: #000;
   font-size: max(12px, 1.8vw);
   padding: 4px 0;
+  position: relative;
+}
+
+.main-navigation a:hover {
+  text-decoration: none;
+}
+
+.main-navigation a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #7aa8ff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.1s ease-out;
+}
+
+/* ホバー時のアニメーション */
+.main-navigation a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ホバーが外れた時のアニメーション */
+.main-navigation a:not(:hover)::before {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.1s ease-out;
 }
 
 main {
