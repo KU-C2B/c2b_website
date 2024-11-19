@@ -72,7 +72,7 @@ header {
   flex: 1;
   color: #000;
   font-size: clamp(12px, 1.8vw, 20px);
-  font-family: fantasy, sans-serif;
+  font-family: Courier, sans-serif;
   padding: 4px 0;
   position: relative;
 }
