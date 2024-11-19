@@ -23,6 +23,7 @@
   /*横幅94%で左右に余白を持たせて中央寄せ*/
   width: 94%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .slider .slick-slide {
@@ -78,6 +79,7 @@
 .slick-dots {
   text-align: center;
   margin: 20px 0 0 0;
+  padding: 0;
 }
 
 .slick-dots li {
