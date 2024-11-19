@@ -110,6 +110,7 @@ h2 a {
   font-size: 20px;
 }
 
+// 吹き出しのようなデザイン
 h2:before {
   position: absolute;
   content: "";
