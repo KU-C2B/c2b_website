@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   color: rgb(0, 1, 51);
+  box-sizing: border-box;
 }
 
 ul {
@@ -114,11 +115,6 @@ main {
   width: 100%;
   height: auto;
   aspect-ratio: 900 / 239;
-}
-
-.essay {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 h1 {
@@ -270,10 +266,5 @@ footer {
     background-repeat: no-repeat;
     background-position: 0 1.5vw;
     background-size: 10vw;
-  }
-
-  .essay {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
