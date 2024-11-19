@@ -29,19 +29,9 @@ p {
   padding: 0.2em 0;
 }
 
-header {
-  margin-top: 15px;
-}
-
-a img {
-  border-style: none;
-  border-width: 0px;
-}
-
 body {
   font-size: 14px;
   line-height: 1.6;
-  margin: auto;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 20%;
@@ -52,10 +42,12 @@ body {
   overflow-wrap: break-word;
 }
 
-.resizeimage img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 900 / 636;
+header {
+  margin-top: 15px;
+}
+
+main {
+  margin: 0 clamp(1rem, 2.5vw, 2rem);
 }
 
 .logo img {
@@ -178,8 +170,6 @@ footer {
   */
 
   body {
-    width: 95vw;
-    margin: auto;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 20%;
