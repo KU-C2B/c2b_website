@@ -6,11 +6,7 @@
       content="ニコニコ系総合創作サークルC.2.B project(通称しつび、C2B)の新歓情報です。C.2.B projectは年間を通して見学・入会を受け付けております。春の新歓シーズンでは新歓講座・新歓花見など様々な新歓イベントが行われます。"
     />
     <title>新歓情報 | C.2.B project | ニコニコ系総合創作サークル</title>
-    <link
-      href="./css/default.css?202302180000"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="./css/default.css" rel="stylesheet" type="text/css" />
     <link
       href="./css/sinkan.css?202303250000"
       rel="stylesheet"
@@ -26,14 +22,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="apple-touch-icon" href="images/icon.png" />
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <![endif]-->
   </head>
 
   <body>
-    <header>
+    <header role="banner">
       <div class="logo">
         <a href="index.html"
           ><img
@@ -43,15 +35,18 @@
             height="auto"
         /></a>
       </div>
-
-      <nav>
+      <nav
+        role="navigation"
+        aria-label="メインナビゲーション"
+        class="main-navigation"
+      >
         <ul>
-          <li id="nav0"><a href="index.html">TOP</a></li>
-          <li id="nav1"><a href="about.html">AboutUs</a></li>
-          <li id="nav2"><a href="work.html">Works</a></li>
-          <li id="nav3"><a href="term.html">Terms</a></li>
-          <li id="nav4"><a href="faq.html">FAQ</a></li>
-          <li id="nav5"><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="work.html">Works</a></li>
+          <li><a href="term.html">Terms</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>

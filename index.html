@@ -10,19 +10,14 @@
     <title>
       C.2.B project | ニコニコ系総合創作サークル | 京都大学 インカレサークル
     </title>
-    <link
-      href="./css/default.css?202309240000"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="./css/default.css" rel="stylesheet" type="text/css" />
     <link href="./css/top.css?202309240000" rel="stylesheet" type="text/css" />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="apple-touch-icon" href="images/icon.png" />
   </head>
 
   <body>
-    <p></p>
-    <header>
+    <header role="banner">
       <div class="logo">
         <a href="index.html"
           ><img
@@ -32,122 +27,127 @@
             height="239"
         /></a>
       </div>
-      <nav>
+      <nav
+        role="navigation"
+        aria-label="メインナビゲーション"
+        class="main-navigation"
+      >
         <ul>
-          <li id="nav0"><a href="index.html">TOP</a></li>
-          <li id="nav1"><a href="about.html">AboutUs</a></li>
-          <li id="nav2"><a href="work.html">Works</a></li>
-          <li id="nav3"><a href="term.html">Terms</a></li>
-          <li id="nav4"><a href="faq.html">FAQ</a></li>
-          <li id="nav5"><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="work.html">Works</a></li>
+          <li><a href="term.html">Terms</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <h1>C.2.B projectへようこそ!</h1>
-
-    <section>
-      <div class="resizeimage" style="text-align: center">
-        <img
-          src="images/top_2024.webp"
-          alt="トップ画像"
-          width="100%"
-          height="auto"
-        />
-      </div>
-      <h2>C.2.B projectについて</h2>
-      <p>
-        こんにちは、ニコニコ系総合創作サークル C.2.B
-        project(通称しつび、C2B)です！
-        我々はイラスト、DTM、コスプレ、小説、踊ってみた歌ってみた、ゲーム開発など、ゆるーく創造的オタク活動をするインカレサークルです。<br />
-        京都大学を中心に活動していて京大生の会員が多数ですが、京産、京女、同女、立命館やその他大学の方もいらっしゃいます。<br />
-        大学、学年を問わず誰でも歓迎です！詳しくは<a href="about.html"
-          >C.2.B projectとは</a
-        >をご覧ください。
-      </p>
-      <h2>活動日時・場所</h2>
-      <p style="margin-bottom: 20px">
-        2024年度は毎週月曜日と金曜日に例会を開催しています。18:45から21:00まで文学部棟にて対面で行います。<br />
-        例会は参加必須ではなく、都合の良い時に来たい人が集まるという感じです。また、テスト期間中は例会はありません。
-      </p>
-    </section>
-
-    <!-- NF用ポップアップ
-	<input type="checkbox" id="popup" checked>
-	<div class="popup-overlay">
-		<div class="popup-window">
-			<p class="popup-text">
-				<a href="nf.html"><img src="images/nf/2023/NF2023.webp" width="100%"></a>
-
-			</p>
-			<label class="popup-close" for="popup">
-				<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					<line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-					<line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-				</svg>
-			</label>
-		</div>
-	</div> -->
-
-    <section id="shoukai">
-      <a
-        class="twitter-timeline"
-        data-width="280"
-        data-height="400"
-        data-dnt="true"
-        data-theme="light"
-        data-link-color="#19CF86"
-        href="https://twitter.com/C2Bproject"
-        >Tweets by C2Bproject</a
-      >
-      <script
-        async
-        src="//platform.twitter.com/widgets.js"
-        charset="utf-8"
-      ></script>
-      <h2>作品紹介</h2>
-      <p>
-        サークル制作動画のマイリストです。<a href="work.html">もっと見る</a>
-      </p>
-      <iframe
-        title="C.2.B projectマイリスト"
-        width="234"
-        height="176"
-        src="https://ext.nicovideo.jp/thumb_mylist/55857234"
-        style="border: none"
-        ><a href="https://www.nicovideo.jp/mylist/55857234"
-          >【ニコニコ動画】</a
-        ></iframe
-      >
-    </section>
-    <section id="news" class="essay">
-      <h1>News</h1>
-      <article>
-        <h2>トップページを更新しました！</h2>
-        <p>2024年版にトップページを更新いたしました。</p>
-      </article>
-      <article>
-        <h2>C.2.B project(通称しつび、C2B)へようこそ！<br /></h2>
+    <main>
+      <h1>C.2.B projectへようこそ!</h1>
+      <section>
+        <div>
+          <img
+            src="images/top_2024.webp"
+            alt="トップ画像"
+            width="100%"
+            height="auto"
+          />
+        </div>
+        <h2>C.2.B projectについて</h2>
         <p>
-          2024年度会員募集中です！<br />
-          詳細は
-          <a href="sinkan.html">こちら（新歓情報・入会について）</a>
-          をクリック！<br />
-          <a href="https://twitter.com/C2Bproject" target="_blank"
-            >公式Twitter(@C2Bproject)</a
-          >でもC.2.B projectの様子をつぶやいております！
+          こんにちは、ニコニコ系総合創作サークル C.2.B
+          project(通称しつび、C2B)です！
+          我々はイラスト、DTM、コスプレ、小説、踊ってみた歌ってみた、ゲーム開発など、ゆるーく創造的オタク活動をするインカレサークルです。<br />
+          京都大学を中心に活動していて京大生の会員が多数ですが、京産、京女、同女、立命館やその他大学の方もいらっしゃいます。<br />
+          大学、学年を問わず誰でも歓迎です！詳しくは<a href="about.html"
+            >C.2.B projectとは</a
+          >をご覧ください。
         </p>
-      </article>
-    </section>
-    <a href="./nf/2024/index.html">
-      <div class="floating-banner">
-        <div class="banner">
-          <div class="copy" style="color: #fff">
-            2024年NF情報はこちら！<br class="sp" />>>
+        <h2>活動日時・場所</h2>
+        <p style="margin-bottom: 20px">
+          2024年度は毎週月曜日と金曜日に例会を開催しています。18:45から21:00まで文学部棟にて対面で行います。<br />
+          例会は参加必須ではなく、都合の良い時に来たい人が集まるという感じです。また、テスト期間中は例会はありません。
+        </p>
+      </section>
+
+      <!-- NF用ポップアップ
+    <input type="checkbox" id="popup" checked>
+    <div class="popup-overlay">
+      <div class="popup-window">
+        <p class="popup-text">
+          <a href="nf.html"><img src="images/nf/2023/NF2023.webp" width="100%"></a>
+
+        </p>
+        <label class="popup-close" for="popup">
+          <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+            <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+          </svg>
+        </label>
+      </div>
+    </div> -->
+
+      <section id="shoukai">
+        <a
+          class="twitter-timeline"
+          data-width="280"
+          data-height="400"
+          data-dnt="true"
+          data-theme="light"
+          data-link-color="#19CF86"
+          href="https://twitter.com/C2Bproject"
+          >Tweets by C2Bproject</a
+        >
+        <script
+          async
+          src="//platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+        <h2>作品紹介</h2>
+        <p>
+          サークル制作動画のマイリストです。<a href="work.html">もっと見る</a>
+        </p>
+        <iframe
+          title="C.2.B projectマイリスト"
+          width="234"
+          height="176"
+          src="https://ext.nicovideo.jp/thumb_mylist/55857234"
+          style="border: none"
+          ><a href="https://www.nicovideo.jp/mylist/55857234"
+            >【ニコニコ動画】</a
+          ></iframe
+        >
+      </section>
+      <section id="news" class="essay">
+        <h1>News</h1>
+        <article>
+          <h2>トップページを更新しました！</h2>
+          <p>2024年版にトップページを更新いたしました。</p>
+        </article>
+        <article>
+          <h2>C.2.B project(通称しつび、C2B)へようこそ！<br /></h2>
+          <p>
+            2024年度会員募集中です！<br />
+            詳細は
+            <a href="sinkan.html">こちら（新歓情報・入会について）</a>
+            をクリック！<br />
+            <a href="https://twitter.com/C2Bproject" target="_blank"
+              >公式Twitter(@C2Bproject)</a
+            >でもC.2.B projectの様子をつぶやいております！
+          </p>
+        </article>
+      </section>
+      <a href="./nf/2024/index.html">
+        <div class="floating-banner">
+          <div class="banner">
+            <div class="copy" style="color: #fff">
+              2024年NF情報はこちら！<br class="sp" />>>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
 
-    <footer>Copyright(C)2008-2024 C.2.B project All Rights Reserved.</footer>
+      <footer>Copyright(C)2008-2024 C.2.B project All Rights Reserved.</footer>
+    </main>
   </body>
 </html>
