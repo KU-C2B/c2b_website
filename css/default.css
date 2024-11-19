@@ -30,6 +30,8 @@ p {
 }
 
 body {
+  max-width: 900px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 1.6;
   background-image: url("../images/background.jpg");
@@ -68,7 +70,8 @@ header {
 .main-navigation a {
   flex: 1;
   color: #000;
-  font-size: max(12px, 1.8vw);
+  font-size: clamp(12px, 1.8vw, 20px);
+  font-family: fantasy, sans-serif;
   padding: 4px 0;
   position: relative;
 }
