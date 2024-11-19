@@ -15,10 +15,6 @@ dd {
   margin-left: 2em;
 }
 
-li {
-  list-style: none;
-}
-
-ul {
-  margin-left: 4em;
+dd li {
+  text-indent: 0em;
 }

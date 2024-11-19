@@ -46,6 +46,32 @@ header {
   margin-top: 15px;
 }
 
+.main-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.main-navigation ul li {
+  flex: 1;
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation ul li:not(:last-child) {
+  border-right: 2px solid #7aa8ff;
+  margin-right: -2px;
+}
+
+.main-navigation a {
+  flex: 1;
+  color: #000;
+  font-size: max(12px, 1.8vw);
+  padding: 4px 0;
+}
+
 main {
   margin: 0 clamp(1rem, 2.5vw, 2rem);
 }
