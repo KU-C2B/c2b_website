@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 900px;
+  margin: 0 auto 200px; /* バナー、室戸みあなどを考慮し余白を空けておく */
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
 ul {
   padding-inline-start: 40px;
 }
@@ -30,14 +38,8 @@ p {
   padding: 0.2em 0;
 }
 
-body {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.6;
-  background-color: #ffffff;
-  word-break: keep-all;
-  overflow-wrap: break-word;
+img {
+  vertical-align: bottom;
 }
 
 header {
@@ -183,16 +185,24 @@ address {
   margin: 4rem 1rem;
 }
 
-.sticky-bottom {
-  position: sticky;
-  bottom: 0;
-}
-
 .banner {
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
   width: 250px;
   padding: 20px 10px;
   background: radial-gradient(#eb7426, #cf5606);
-  bottom: 2rem;
+}
+
+.muroto-mia-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+}
+
+.muroto-mia-bottom img {
+  width: 100%;
 }
 
 .copy {
@@ -244,7 +254,6 @@ address {
 
   .banner {
     width: 100vw;
-    padding: 8px 0;
     bottom: 0;
   }
 }
