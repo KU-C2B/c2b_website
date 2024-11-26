@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 900px;
   margin: 0 auto 200px; /* バナー、室戸みあなどを考慮し余白を空けておく */
@@ -198,7 +202,7 @@ address {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 20%;
+  width: min(20%, 400px);
 }
 
 .muroto-mia-bottom img {
