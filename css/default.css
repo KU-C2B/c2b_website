@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto 200px; /* バナー、室戸みあなどを考慮し余白を空けておく */
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
 ul {
   padding-inline-start: 40px;
 }
@@ -30,19 +42,8 @@ p {
   padding: 0.2em 0;
 }
 
-body {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.6;
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 100% 100%;
-  background-attachment: fixed;
-  background-color: #ffffff;
-  word-break: keep-all;
-  overflow-wrap: break-word;
+img {
+  vertical-align: bottom;
 }
 
 header {
@@ -172,45 +173,49 @@ h3 {
   margin-bottom: 1em;
 }
 
-.floating-banner {
-  position: fixed;
-  z-index: 99999;
-  bottom: 30px;
-  left: 0;
+address {
+  font-style: normal;
+}
+
+.copyright {
+  clear: both;
+  padding: 2px;
+  text-align: center;
+  display: block;
+  border-radius: 12px 12px 12px 12px;
+  background: #8087b0;
+  color: #ffffff;
+  font-size: 13px;
+  margin: 4rem 1rem;
 }
 
 .banner {
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
   width: 250px;
-  /* バナーの横幅 */
   padding: 20px 10px;
   background: radial-gradient(#eb7426, #cf5606);
-  font-weight: bold;
-  text-align: center;
+}
+
+.muroto-mia-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: min(20%, 400px);
+}
+
+.muroto-mia-bottom img {
+  width: 100%;
 }
 
 .copy {
   font-size: 25px;
   font-family: sans-serif;
-  margin: 0 auto 0;
+  font-weight: bold;
   line-height: 1.6;
-}
-
-address {
-  font-style: normal;
-}
-
-footer {
-  clear: both;
-  padding: 2px;
-  text-align: center;
-  display: block;
-  width: 100%;
-  border-radius: 12px 12px 12px 12px;
-  background: #8087b0;
   color: #ffffff;
-  font-size: 13px;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  text-align: center;
 }
 
 @media screen and (max-width: 560px) {
@@ -219,29 +224,8 @@ footer {
   スマホ用のスタイル
   */
 
-  body {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: 100% 100%;
-    background-attachment: fixed;
-    background-color: #ffffff;
-  }
-
   .logo img {
     margin-bottom: 15px;
-  }
-
-  .floating-banner {
-    display: inline-block;
-    bottom: 0;
-    left: 0;
-  }
-
-  .banner {
-    width: 100vw;
-    height: 12vh;
-    padding: 8px;
   }
 
   .sp {
@@ -266,5 +250,14 @@ footer {
     background-repeat: no-repeat;
     background-position: 0 1.5vw;
     background-size: 10vw;
+  }
+
+  .copyright {
+    margin: 2rem 1rem;
+  }
+
+  .banner {
+    width: 100vw;
+    bottom: 0;
   }
 }
