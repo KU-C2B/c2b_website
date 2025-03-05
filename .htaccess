@@ -17,5 +17,5 @@ RewriteCond %{REQUEST_URI} ^/sinkan\.html$
 RewriteRule ^sinkan\.html$ /sinkan [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/sinkan/?$
-RewriteRule ^sinkan/?$ /sinkan/2024 [R=301,L]
+RewriteRule ^sinkan/?$ /sinkan/2025 [R=301,L]
 # END SYSTEM HTTPS SETTING
