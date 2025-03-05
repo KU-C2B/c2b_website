@@ -132,6 +132,10 @@ h1 {
   background-size: 50px;
 }
 
+h1 img {
+  height: 10vw;
+}
+
 h2 {
   font-size: 20px;
   font-family: sans-serif;
@@ -236,10 +240,6 @@ address {
     height: 100%;
     font-size: 22px;
     padding: 15px 0;
-  }
-
-  h1 img {
-    height: 10vw;
   }
 
   h1 {
