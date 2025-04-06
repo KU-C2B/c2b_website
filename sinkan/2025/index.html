@@ -18,6 +18,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" href="../../images/favicon.ico" />
     <link rel="apple-touch-icon" href="../../images/icon.png" />
+    <!-- このページだけはFont Awesomeでアイコン追加 -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -59,7 +64,15 @@
         <h3>C.2.B project 今年度の新歓について</h3>
 
         <p>
-          今年の新歓については、<b>現在準備中</b>です。新歓イベントの日程や内容については、決まり次第お知らせいたします。お楽しみに！
+          今年も新歓講座を開催します！<br />
+          全ての講座でオンライン配信いたします。
+        </p>
+        <p>
+          都度ツイートしますので、<a
+            href="http://twitter.com/c2bproject"
+            target="_blank"
+            >公式X(@c2bproject)</a
+          >を確認してください。
         </p>
         <p>
           去年の新歓情報は
@@ -73,13 +86,44 @@
             <p>(上回生でも京都大学外の学生でも、近畿以外の学生でもＯＫ！)</p>
           </li>
         </ul>
+
+        <h3>参加方法</h3>
+        <p>
+          <b> 対面参加の場合: </b>
+          <a href="#section_courses">以下の新歓講座</a
+          >を確認し、開催日の18:45頃に京大のクスノキ前に集合してください。
+          しつびの看板を持った会員が新歓講座の場所に案内いたします。
+        </p>
+        <p>
+          <b> オンライン参加の場合: </b>
+          <a
+            href="https://www.nicovideo.jp/user/57936866/live_programs"
+            target="_blank"
+            >C.2.B. Project ニコニコ生放送ページ</a
+          >
+          にて、講座の開始時刻に配信を行いますので、そちらをご覧ください。<br />
+        </p>
+      </section>
+
+      <section id="section_courses">
+        <h2>2025年度新歓講座</h2>
+        <p>
+          主要な活動ジャンルに関しての入門講座をC.2.B
+          projectのメンバーが対面およびニコニコ生放送のライブ配信にて実施します。<br />
+          参加希望者は、開催日の18:45頃に京大のクスノキ前に集合してください。<br />
+          しつびの看板を持った会員が新歓講座の場所に案内いたします。
+        </p>
+
+        <!-- ここに、新歓講座の情報が追記される -->
+        <div id="courses" class="courses"></div>
+      </section>
+
+      <section>
+        <h2>C.2.B projectに入会！（いつでも待ってます）</h2>
         <h3>サークルの概要</h3>
         <p>
           皆で創作や雑談やゲームをしています。新しく来られた方にはサークルの説明も行います。途中参加・途中退出可能です。お気軽に参加してください！！
         </p>
-      </section>
-      <section>
-        <h2>C.2.B projectに入会！（いつでも待ってます）</h2>
         <h3>入会方法</h3>
         <em>c2bpro＠gmail.com</em>(＠は半角) 宛に<br />
         <br />
@@ -110,5 +154,155 @@
         Copyright(C)2008-2024 C.2.B project All Rights Reserved.
       </div>
     </footer>
+    <script>
+      // 新歓情報を作成する
+      // 新歓講座のクラス
+      class Course {
+        constructor(
+          startDate,
+          title,
+          person,
+          description,
+          { showPerson = true, online = true } = {}
+        ) {
+          this.date = startDate;
+          this.title = title;
+          this.person = person;
+          this.description = description;
+          this.showPerson = showPerson;
+          this.online = online;
+        }
+
+        get startDateDisplay() {
+          // 日付を表示用に整形
+          const year = this.date.getFullYear();
+          const month = this.date.getMonth() + 1;
+          const day = this.date.getDate();
+          const week = ["日", "月", "火", "水", "木", "金", "土"][
+            this.date.getDay()
+          ];
+          const hour = this.date.getHours();
+          const minute = this.date.getMinutes();
+          let display = `${year}/${month}/${day} (${week}曜日) ${hour}:${
+            minute < 10 ? "0" : ""
+          }${minute}～`;
+          if (this.date < new Date()) {
+            display += " (終了)";
+          }
+          return display;
+        }
+
+        get titleDisplay() {
+          return `${this.title}${this.online ? "" : "*"}`;
+        }
+      }
+
+      // ここに新歓講座の情報を入力
+      const courses = [
+        new Course(
+          new Date(2025, 3, 11, 19, 0),
+          "おえかきのはじめかた",
+          "小汚いエアコンの生け捕り",
+          "いつ始めたって良い 今こそ全人類おえかきを始めよう",
+          { showPerson: true }
+        ),
+        new Course(
+          new Date(2025, 3, 14, 19, 0),
+          "ボカロ曲を1から作って公開するまで実演してみた！",
+          "ダ王P(やっくー)",
+          "ボカロ曲を作るのは意外と簡単！？曲作り・動画作り・そして全世界に公開するまでを実演します！",
+          { showPerson: true }
+        ),
+        new Course(
+          new Date(2025, 3, 18, 19, 0),
+          "コスプレのすゝめ",
+          "あんこ・おはし・ふれい",
+          "大学での新たな趣味としてコスプレを始めてみませんか？コスプレの魅力や始めるにあたって気をつけたほうがいいことなどを全力でお伝えします。これからコスプレを始めるか迷っている人にこそ是非来ていただきたいです！！！",
+          { showPerson: true }
+        ),
+        new Course(
+          new Date(2025, 3, 28, 19, 0),
+          "小説のはじめの一歩",
+          "ミラン",
+          "ここC.2.Bには小説を書いている会員も沢山います！彼ら彼女らが普段何を意識して作品を書き上げているのか、1月に行われた座談会から紐解きます。小説を書いた経験がないという方も大歓迎です！皆さんの意見もぜひお聞かせください！",
+          { showPerson: true }
+        ),
+        new Course(
+          new Date(2025, 4, 2, 19, 0),
+          "動画編集ゆっくりはじめていってね!!!",
+          "mitarou",
+          "ゆっくり動画・ソフトウェアトーク（ボイロ）動画の制作に適したソフトである、ゆっくりムービーメーカー4の使い方を中心に、動画制作の流れを解説します。",
+          { showPerson: true }
+        ),
+        new Course(
+          new Date(2025, 4, 9, 19, 0),
+          "MikuMikuDance(MMD)の使い方",
+          "炭素",
+          "MMDは3Dモデルを動かして映像や静止画を作れるソフトです。MMDを知らない、全く触ったことがない人でも簡単な映像作品を作れるくらいまでの導入をする予定です。そこまできなかったらごめん。",
+          { showPerson: true }
+        ),
+        new Course(
+          new Date(2025, 4, 12, 19, 0),
+          "今すぐにゲーム実況してみよう！",
+          "やっくー",
+          "ゲーム実況は興味あるけど、めんどくさそうでやってない！？そんなあなたが今すぐにでもゲーム実況できるような導入をする予定です！",
+          { showPerson: true }
+        ),
+      ];
+
+      // 新歓講座の情報を追加
+      const section_courses = document.getElementById("courses");
+
+      const themeColors = {
+        おえかき: "#ec6ca7",
+        ボカロ: "#b28ae0",
+        コスプレ: "#5c84eb",
+        小説: "#f3a432",
+        動画編集: "#aa91e4",
+        MMD: "#36b3a8",
+        ゲーム実況: "#ea4a44",
+      };
+
+      function getThemeColor(title) {
+        if (title.includes("おえかき")) return themeColors["おえかき"];
+        if (title.includes("ボカロ")) return themeColors["ボカロ"];
+        if (title.includes("コスプレ")) return themeColors["コスプレ"];
+        if (title.includes("小説")) return themeColors["小説"];
+        if (title.includes("動画")) return themeColors["動画編集"];
+        if (title.includes("MikuMikuDance") || title.includes("MMD"))
+          return themeColors["MMD"];
+        if (title.includes("ゲーム実況")) return themeColors["ゲーム実況"];
+        return "#ccc";
+      }
+
+      courses.forEach((course) => {
+        const div = document.createElement("div");
+        div.style.borderTopColor = getThemeColor(course.title);
+
+        const course_date = document.createElement("div");
+        course_date.classList.add("course_date");
+        course_date.innerHTML = `<i class="far fa-calendar-alt"></i> ${course.startDateDisplay}`;
+        div.appendChild(course_date);
+
+        const course_title = document.createElement("div");
+        course_title.classList.add("course_title");
+        course_title.textContent = course.titleDisplay;
+        div.appendChild(course_title);
+
+        const course_description = document.createElement("div");
+        course_description.classList.add("course_description");
+        if (course.showPerson) {
+          const span = document.createElement("span");
+          span.innerHTML = `<i class="fas fa-user"></i> 担当: ${course.person}`;
+          course_description.appendChild(span);
+        }
+        const p = document.createElement("p");
+        p.textContent = course.description;
+        course_description.appendChild(p);
+
+        div.appendChild(course_description);
+        section_courses.appendChild(div);
+      });
+    </script>
   </body>
 </html>
