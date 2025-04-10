@@ -1,3 +1,12 @@
+h1 {
+  border: none;
+}
+
+.sinkan_title {
+  height: unset;
+  width: 100%;
+}
+
 .courses {
   display: flex;
   flex-wrap: wrap;
