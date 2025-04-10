@@ -234,6 +234,13 @@
           { showPerson: true }
         ),
         new Course(
+          new Date(2025, 3, 21, 19, 0),
+          "対面新歓",
+          "しつび",
+          "創作活動やインターネット文化について、みんなで語り合う会です。ご飯奢りもあります！",
+          { showPerson: false, online: false }
+        ),
+        new Course(
           new Date(2025, 3, 28, 19, 0),
           "小説のはじめの一歩",
           "ミラン",
@@ -312,6 +319,12 @@
         const p = document.createElement("p");
         p.textContent = course.description;
         course_description.appendChild(p);
+        if (!course.online) {
+          const offline = document.createElement("p");
+          offline.classList.add("offline");
+          offline.textContent = "*オンライン配信はありません。";
+          course_description.appendChild(offline);
+        }
 
         div.appendChild(course_description);
         section_courses.appendChild(div);
