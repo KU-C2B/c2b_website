@@ -386,7 +386,7 @@
   let annivElm = document.getElementById("anniv");
   let today = new Date();
   let nendo = today.getFullYear();
-  if (today.getMonth <= 3) {
+  if (today.getMonth() <= 3) {
     nendo--;
   }
   nendoElm.textContent = nendo;
