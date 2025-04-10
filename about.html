@@ -375,10 +375,9 @@
       </a>
     </div>
     <footer>
-      <div class="copyright">
-        Copyright(C)2008-2024 C.2.B project All Rights Reserved.
-      </div>
+      <div class="copyright" id="copyright"></div>
     </footer>
+    <script src="./js/copyright.js"></script>
   </body>
 </html>
 
@@ -387,7 +386,7 @@
   let annivElm = document.getElementById("anniv");
   let today = new Date();
   let nendo = today.getFullYear();
-  if (today.getMonth <= 3) {
+  if (today.getMonth() <= 3) {
     nendo--;
   }
   nendoElm.textContent = nendo;
