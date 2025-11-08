@@ -59,6 +59,7 @@ body {
   background: var(--bg-color);
   min-height: 100vh;
   margin: 0;
+  padding-bottom: 240px;
 }
 
 a {
@@ -732,6 +733,7 @@ h4 {
   background: #fffdfb;
   display: flex;
   justify-content: center;
+  scroll-margin-bottom: 260px;
 }
 
 .related-links-container {
@@ -793,6 +795,28 @@ h4 {
 .related-link-arrow {
   font-size: 1rem;
   color: var(--accent-color);
+}
+
+.muroto-mia-floating {
+  position: fixed;
+  right: clamp(0.5rem, 3vw, 2rem);
+  bottom: 0;
+  width: min(12vw, 200px);
+  z-index: 20;
+}
+
+.muroto-mia-floating a {
+  display: block;
+}
+
+.muroto-mia-floating img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.muroto-mia-floating a:hover img {
+  transform: translateX(-6px);
 }
 
 @media (min-width: 1024px) {
@@ -864,5 +888,11 @@ h4 {
 
   .event-card {
     grid-template-columns: 1fr;
+  }
+
+  .muroto-mia-floating {
+    width: clamp(60px, 22vw, 180px);
+    right: 0.5rem;
+    bottom: 0;
   }
 }
