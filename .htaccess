@@ -11,7 +11,7 @@ RewriteCond %{REQUEST_URI} ^/nf\.html$
 RewriteRule ^nf\.html$ /nf [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/nf/?$
-RewriteRule ^nf/?$ /nf/2024 [R=302,L]
+RewriteRule ^nf/?$ /nf/2025 [R=302,L]
 
 RewriteCond %{REQUEST_URI} ^/sinkan\.html$
 RewriteRule ^sinkan\.html$ /sinkan [R=301,L]
