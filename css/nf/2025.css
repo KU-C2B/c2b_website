@@ -78,7 +78,7 @@ h4 {
 }
 
 .top {
-  height: 100svh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
 }
