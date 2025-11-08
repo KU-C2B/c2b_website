@@ -260,7 +260,7 @@ h4 {
   flex: 1;
   display: grid;
   grid-template-columns: minmax(360px, 60%) 1fr;
-  height: 100svh;
+  height: 100vh;
 }
 
 .top-image-container {
