@@ -726,6 +726,75 @@ h4 {
   line-height: 1.7;
 }
 
+/* Related Links Section */
+.related-links {
+  padding: var(--section-padding);
+  background: #fffdfb;
+  display: flex;
+  justify-content: center;
+}
+
+.related-links-container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.related-links h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 0;
+}
+
+.related-intro {
+  margin: 0 auto;
+  max-width: 640px;
+  color: var(--muted-color);
+}
+
+.related-links-table {
+  width: 100%;
+  border-top: 1px solid var(--divider-color);
+}
+
+.related-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+  gap: 2rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--divider-color);
+  align-items: center;
+}
+
+.related-label {
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.related-link {
+  text-align: right;
+}
+
+.related-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.related-link-url {
+  font-size: 0.95rem;
+}
+
+.related-link-arrow {
+  font-size: 1rem;
+  color: var(--accent-color);
+}
+
 @media (min-width: 1024px) {
   .time-sections {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -756,6 +825,15 @@ h4 {
   .time-sections,
   .access-grid {
     grid-template-columns: 1fr;
+  }
+
+  .related-row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .related-link {
+    text-align: left;
   }
 
   .market-item {
