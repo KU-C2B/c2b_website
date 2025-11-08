@@ -199,8 +199,10 @@ address {
   left: 0;
   width: 250px;
   padding: 20px 10px;
-  background: radial-gradient(#f8b7d4, #f4a1c1); /* 春用 */
-  /* background: radial-gradient(#eb7426, #cf5606); */ /* 秋用 */
+  /* 春用 */
+  /* background: radial-gradient(#f8b7d4, #f4a1c1); */
+  /* 秋用 */
+  background: radial-gradient(#eb7426, #cf5606);
 }
 
 .banner a:hover {
