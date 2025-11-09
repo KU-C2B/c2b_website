@@ -758,7 +758,7 @@ h4 {
   margin-top: 1rem;
 }
 
-.access-link a {
+.decorated-link {
   font-weight: 600;
   color: var(--accent-color);
   text-decoration: underline;
