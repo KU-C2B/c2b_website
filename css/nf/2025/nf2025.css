@@ -398,6 +398,41 @@ h4 {
   opacity: 0.35;
 }
 
+.info-box {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--divider-color);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(20, 12, 43, 0.08);
+  max-width: 520px;
+}
+
+.info-box-title {
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+}
+
+.info-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-color);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.info-list li {
+  margin-bottom: 0.2rem;
+}
+
+.info-note {
+  margin: 0.6rem 0 0 0;
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}
+
 /* Café Section Styling */
 .content-cafe {
   padding: var(--section-padding);
@@ -427,13 +462,12 @@ h4 {
 
 .cafe-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--section-gap);
   margin-bottom: 1rem;
 }
 
-.cafe-description,
-.cafe-menu {
+.cafe-description {
   padding-left: 1.5rem;
   border-left: 4px solid var(--divider-color);
 }
@@ -441,6 +475,63 @@ h4 {
 .cafe-menu h3 {
   margin: 0 0 1rem 0;
   font-size: 1.3rem;
+}
+
+.menu-list,
+.goods-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.menu-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--divider-color);
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(20, 12, 43, 0.08);
+}
+
+.menu-title {
+  font-weight: 700;
+}
+
+.menu-price {
+  color: var(--accent-color);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.menu-note {
+  margin: 0.35rem 0 0 0;
+  color: var(--muted-color);
+  font-size: 0.92rem;
+}
+
+.menu-card.emphasis {
+  background: linear-gradient(
+    135deg,
+    rgba(237, 122, 112, 0.14),
+    rgba(242, 186, 132, 0.16)
+  );
+  border-color: rgba(237, 122, 112, 0.4);
+}
+
+.bonus-note {
+  margin: 1rem 0 0 0;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(237, 122, 112, 0.08);
+  border: 1px dashed var(--accent-color);
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 .coming-soon {
@@ -574,6 +665,30 @@ h4 {
   line-height: 1.7;
 }
 
+.price-row {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.price-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  background: rgba(237, 122, 112, 0.14);
+  color: var(--accent-color);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.price-note {
+  color: var(--muted-color);
+  font-size: 0.95rem;
+}
+
 .market-item:nth-child(even) .market-content {
   text-align: right;
 }
@@ -589,7 +704,6 @@ h4 {
 }
 
 .market-goods p {
-  margin: 0;
   color: var(--muted-color);
 }
 
@@ -957,6 +1071,15 @@ h4 {
 
   .market-item:nth-child(even) .market-content {
     text-align: left;
+  }
+
+  .menu-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-price {
+    white-space: normal;
   }
 }
 
