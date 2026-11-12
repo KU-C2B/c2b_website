@@ -362,6 +362,7 @@ h4 {
   align-items: flex-start;
   justify-content: center;
   position: relative;
+  isolation: isolate; /* keep .decoration-box (z-index:-1) above the section background */
   background: #fffaf7;
   overflow: hidden;
 }
