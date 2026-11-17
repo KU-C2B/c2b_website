@@ -399,6 +399,15 @@ h4 {
   opacity: 0.35;
 }
 
+.image-credit {
+  position: absolute;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: 0.75rem;
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--muted-color);
+}
+
 .info-box {
   margin-top: 1.5rem;
   padding: 1rem 1.25rem;
